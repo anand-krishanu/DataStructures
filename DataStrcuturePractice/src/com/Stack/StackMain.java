@@ -1,4 +1,4 @@
-package com.DSA;
+package com.Stack;
 
 import java.util.Scanner;
 
