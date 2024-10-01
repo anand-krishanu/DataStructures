@@ -51,4 +51,13 @@ public class Stack {
         height--;
         return temp;
     }
+
+    public Integer peek () {
+        if (height == 0) {
+            return null;
+        }
+        else {
+            return top.value;
+        }
+    }
 }

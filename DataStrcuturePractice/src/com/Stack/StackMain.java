@@ -12,7 +12,7 @@ public class StackMain {
         
         while (true) {
             System.out.println("Choose an option: ");
-            System.out.println("1: Push      2: Pop      3: Print   4: Exit");
+            System.out.println("1: Push      2: Pop      3: Print   4: Peek   5: Exit");
             choice = sc.nextInt();
 
             switch (choice) {
@@ -34,6 +34,10 @@ public class StackMain {
                     break;
 
                 case 4:
+                    System.out.println(myStack.peek());
+                    break;
+
+                case 5:
                     System.exit(0);
             }
         }
