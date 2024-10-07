@@ -22,13 +22,13 @@ public class Stack {
     }
 
     public boolean isEmpty() {
-        return height == 0;
+        return top == null;
     }
 
     public void push(int value) {
         Node newNode = new Node(value);
 
-        if (height == 0) {
+        if (top == null) {
             top = newNode;
             height = 1;
         } else {
@@ -41,7 +41,7 @@ public class Stack {
     public Node pop() {
         Node temp = top;
 
-        if (height == 0) {
+        if (top == null) {
             return null;
         }
 
