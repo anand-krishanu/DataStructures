@@ -5,7 +5,7 @@ public class LinkedList {
     private Node tail;
     private int length;
 
-    static class Node {
+    private static class Node {
         int value;
         Node next;
 
@@ -170,5 +170,19 @@ public class LinkedList {
             before = temp;
             temp = after;
         }
+    }
+
+    public void reverseHelp (Node current) {
+        if(current == null) {
+            return;
+        }
+
+        reverseHelp(current.next);
+        System.out.println(current.value);
+    }
+
+    public void reversePrint () {
+        reverseHelp(head);
+        System.out.println();
     }
 }

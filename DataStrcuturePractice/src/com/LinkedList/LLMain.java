@@ -12,7 +12,7 @@ public class LLMain {
 
         while (true) {
             System.out.println("Choose an option: ");
-            System.out.println("1: Insert Node at the end   2: Insert Node at the start   3: Insert   4: Delete First Node   5: Delete Last Node   6: Delete   7: Print LinkedList  8: End Code");
+            System.out.println("1: Insert Node at the end   2: Insert Node at the start   3: Insert   4: Delete First Node   5: Delete Last Node   6: Delete   7: Print LinkedList   8: Print in reverse  9: End Code");
             int choice = sc.nextInt();
 
             switch (choice) {
@@ -47,7 +47,11 @@ public class LLMain {
                 case 7:
                     myLL.printList();
                     break;
+
                 case 8:
+                    myLL.reversePrint();
+                    break;
+                case 9:
                     System.exit(0);
             }
         }
